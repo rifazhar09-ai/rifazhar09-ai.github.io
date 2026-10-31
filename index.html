@@ -1,0 +1,182 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Portofolio Rizqi Fadillah Azhar</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Web portofolio pribadi: data diri, pendidikan, pengalaman kerja, dan kemampuan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<!-- ANIMASI PEMBUKA -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-in">
+    <img class="intro-logo" src="RFA_logo_transparent.png" alt="">
+    <span class="intro-line"></span>
+  </div>
+</div>
+<link rel="stylesheet" href="style.css">
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#beranda" class="brand" id="brandName" aria-label="Beranda">
+      <img id="logoImg" src="RFA_logo_transparent.png" alt="Logo" style="display:block;height:50px;width:auto;max-width:250px;object-fit:contain;">
+    </a>
+    <nav class="menu" id="menu" aria-label="Navigasi utama">
+      <a href="#beranda" data-s="beranda">Beranda</a>
+      <a href="#data" data-s="data">Data Pribadi</a>
+      <a href="#pendidikan" data-s="pendidikan">Pendidikan</a>
+      <a href="#pengalaman" data-s="pengalaman">Pengalaman</a>
+      <a href="#kemampuan" data-s="kemampuan">Kemampuan</a>
+      <a href="#kontak" data-s="kontak">Kontak</a>
+    </nav>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Ganti tema terang atau gelap" title="Ganti tema">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <button class="icon-btn burger" id="burger" type="button" aria-label="Buka menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- BERANDA -->
+  <section class="hero wrap" id="beranda">
+    <div class="hero-text">
+      <p class="eyebrow">Halo, saya</p>
+      <h1 id="heroName">Rizqi Fadillah Azhar</h1>
+      <p class="role">Saya <span id="typed" class="typed"></span><span class="caret" aria-hidden="true"></span></p>
+      <p class="lead">Lulusan SMK dengan pengalaman magang sebagai IT Staff. Saya membuat website blog perusahaan, mengembangkan aplikasi aspirasi dengan Laravel, dan merapikan data kebutuhan kantor di Microsoft Excel.</p>
+      <div class="cta">
+        <a class="btn primary" href="#pengalaman">Lihat pengalaman</a>
+        <a class="btn" href="#kontak">Hubungi saya</a>
+      </div>
+      <dl class="stats">
+        <div><dt>Pengalaman kerja</dt><dd><span class="count" data-to="2">0</span></dd></div>
+        <div><dt>Jenjang pendidikan</dt><dd><span class="count" data-to="3">0</span></dd></div>
+        <div><dt>Bidang kemampuan</dt><dd><span class="count" data-to="4">0</span></dd></div>
+      </dl>
+    </div>
+
+    <div class="photo-col">
+      <figure class="frame" id="frame">
+        <div class="mat">
+          <img id="photo" alt="Foto profil" hidden>
+          <div class="ph" id="photoPh">
+            <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+            <span>Tempat foto</span>
+          </div>
+        </div>
+        <figcaption class="tag" id="tagName">Mahasiswa Teknik Elektro</figcaption>
+      
+  </section>
+
+  <!-- DATA PRIBADI -->
+  <section class="sec wrap" id="data">
+    <div class="sec-head"><h2>Data Pribadi</h2><p>Klik ikon salin untuk mengambil isi data.</p></div>
+    <dl class="data-list" id="dataList">
+      <div class="row reveal"><dt>Nama</dt><dd>Rizqi Fadillah Azhar</dd><button class="copy" type="button" aria-label="Salin Nama">Salin</button></div>
+      <div class="row reveal"><dt>Tempat, Tanggal Lahir</dt><dd>Bogor, 09 Januari 2008</dd><button class="copy" type="button" aria-label="Salin Tempat, Tanggal Lahir">Salin</button></div>
+      <div class="row reveal"><dt>Jenis Kelamin</dt><dd>Laki-laki</dd><button class="copy" type="button" aria-label="Salin Jenis Kelamin">Salin</button></div>
+      <div class="row reveal"><dt>Agama</dt><dd>Islam</dd><button class="copy" type="button" aria-label="Salin Agama">Salin</button></div>
+      <div class="row reveal"><dt>Alamat</dt><dd>Kp Setu RT 001 RW 005, Bojonggede, Bojong Gede, Bogor</dd><button class="copy" type="button" aria-label="Salin Alamat">Salin</button></div>
+      <div class="row reveal"><dt>Nomor Telepon</dt><dd>0851-8332-3191</dd><button class="copy" type="button" aria-label="Salin Nomor Telepon">Salin</button></div>
+      <div class="row reveal"><dt>Email</dt><dd>rifazhar09@gmail.com</dd><button class="copy" type="button" aria-label="Salin Email">Salin</button></div>
+    </dl>
+  </section>
+
+  <!-- PENDIDIKAN -->
+  <section class="sec wrap" id="pendidikan">
+    <div class="sec-head"><h2>Riwayat Pendidikan</h2><p>Dari yang paling awal sampai terbaru.</p></div>
+    <ol class="timeline">
+      <li class="reveal"><span class="yr">SD</span><div><h3>Sekolah Dasar</h3><p>SDN 05 Bojong Gede · 2014-2020</p></div></li>
+      <li class="reveal"><span class="yr">SMP</span><div><h3>Sekolah Menengah Pertama</h3><p>SMP Negeri 1 Bojong Gede · 2020-2023</p></div></li>
+      <li class="reveal"><span class="yr">SMK</span><div><h3>Sekolah Menengah Kejuruan</h3><p>SMK Negeri 1 Cibinong· RPL · 2023 - 2026</p></div></li>
+    </ol>
+  </section>
+
+  <!-- PENGALAMAN -->
+  <section class="sec wrap" id="pengalaman">
+    <div class="sec-head"><h2>Pengalaman Kerja</h2><p>Klik kartu untuk membuka rincian.</p></div>
+    <div class="exp-list">
+      <article class="exp reveal open">
+        <div class="exp-top" role="button" tabindex="0" aria-expanded="true">
+          <span class="exp-meta"><span class="chip">2025 – 2026</span></span>
+          <span class="exp-title"><strong>IT Staff (Magang)</strong><em>PT Dikari Tata Udara Indonesia</em></span>
+          <span class="chev" aria-hidden="true"></span>
+        </div>
+        <div class="exp-body">
+          <ul>
+            <li>Membuat website blog sebagai media informasi dan promosi perusahaan, serta pengenalan aplikasi.</li>
+            <li>Membuat dan mengembangkan aplikasi website aspirasi perusahaan menggunakan framework Laravel.</li>
+            <li>Melakukan entry dan pengelolaan data kebutuhan perusahaan menggunakan Microsoft Excel.</li>
+          </ul>
+          <div class="tags"><span>Laravel</span><span>Website blog</span><span>Microsoft Excel</span><span>Input data</span></div>
+        </div>
+      </article>
+      <article class="exp reveal">
+        <div class="exp-top" role="button" tabindex="0" aria-expanded="false">
+          <span class="exp-meta"><span class="chip">2025 - 2026</span></span>
+          <span class="exp-title"><strong>Operator Photo Box</strong><em>Gacoan</em></span>
+          <span class="chev" aria-hidden="true"></span>
+        </div>
+        <div class="exp-body">
+          <ul>
+            <li>Menjadi operator photo box di Gacoan.</li>
+            <li>Melayani pengunjung yang ingin berfoto dan menjaga perangkat tetap siap dipakai.</li>
+          </ul>
+          <div class="tags"><span>Pelayanan</span><span>Fotografi</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- KEMAMPUAN -->
+  <section class="sec wrap" id="kemampuan">
+    <div class="sec-head"><h2>Kemampuan</h2><p>Saring berdasarkan bidang.</p></div>
+    <div class="filters" role="tablist" aria-label="Filter kemampuan">
+      <button class="f on" data-f="all" type="button">Semua</button>
+      <button class="f" data-f="web" type="button">Web</button>
+      <button class="f" data-f="data" type="button">Data</button>
+      <button class="f" data-f="konten" type="button">Konten</button>
+    </div>
+    <div class="skills" id="skills">
+      <div class="skill reveal" data-c="web"><span class="mono">&lt;/&gt;</span><h3>HTML, CSS, PHP dan MySQL</h3><p>Dasar pembuatan halaman web dan pengelolaan basis data.</p></div>
+      <div class="skill reveal" data-c="web"><span class="mono">web</span><h3>Pengembangan website dasar</h3><p>Membuat dan merawat website sederhana, termasuk aplikasi dengan Laravel.</p></div>
+      <div class="skill reveal" data-c="data"><span class="mono">xls</span><h3>Pengelolaan dan input data</h3><p>Rapi dan terstruktur, dikerjakan di Microsoft Excel.</p></div>
+      <div class="skill reveal" data-c="konten"><span class="mono">aa</span><h3>Caption media sosial</h3><p>Menulis caption yang menarik untuk promosi.</p></div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section class="sec wrap" id="kontak">
+    <div class="sec-head"><h2>Kontak</h2><p>Tulis pesan, lalu salin atau kirim lewat email.</p></div>
+    <div class="contact">
+      <div class="contact-info reveal">
+        <p class="label">Email</p>
+        <p class="big" id="mailText">rifazhar09@gmail.com</p>
+        <button class="btn small" id="copyMail" type="button">Salin email</button>
+      </div>
+      <form class="form reveal" id="form" novalidate>
+        <label for="fName">Nama</label>
+        <input id="fName" name="name" type="text" autocomplete="name" placeholder="Nama kamu" required>
+        <label for="fMsg">Pesan</label>
+        <textarea id="fMsg" name="msg" rows="4" placeholder="Tulis pesan di sini" required></textarea>
+        <p class="err" id="formErr" role="alert" hidden></p>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Siapkan pesan</button>
+          <a class="btn ghost" id="mailLink" href="#kontak" target="_blank" rel="noopener" hidden>Buka aplikasi email</a>
+        </div>
+        <p class="ok" id="formOk" hidden>Pesan sudah disalin. Tempel di email atau WhatsApp.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in"><span id="year"></span><button class="btn small ghost" id="toTop" type="button">Ke atas</button></div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+
+</body></html>
